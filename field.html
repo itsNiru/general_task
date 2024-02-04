@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>field</title>
+</head>
+<body>
+    <input id="input">
+    <div style="color: red;">
+        <input id="input1" onkeyup="update()">
+        <p id="res" ></p>
+    </div>
+    <button onclick="show()">show</button>
+    <p id="result"></p>
+    <button onclick="change() " id="btn" style="background-color: rgb(226, 45, 45);">subscribe</button>
+    <script>
+        var btn=document.getElementById("btn")
+        var input=document.getElementById("input")
+        var result=document.getElementById("result")
+        function show(){
+            result.textContent=input.value
+        }
+        function update(){
+            res.textContent=input1.value
+        }
+        function change(){
+            btn.style.backgroundColor="white"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 130px;
+            background-color: bisque;
+        }
+        .btn{
+            border-radius: 20px;
+            background-color: rgb(124, 124, 228);
+            margin: 20px;
+            width: 100px;
+            box-shadow: 5px 5px rgb(4, 4, 29);
+            
+        }
+        .field{
+            display: grid;
+            justify-content: center;
+            letter-spacing: 2px;
+            
+        
+            
+        }
+        #first,#second{
+            border-radius: 20px;
+        }
+        a,p{
+            font-size: xx-large;
+            font-weight: 400;
+            font-family: cursive;
+            color: black;
+        }
+        input{
+            height: 50px;
+            font-family: cursive;
+            font-weight: 400;
+            font-size: x-large;
+
+        }
+        .bts{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn:hover{
+            background-color: rgb(168, 168, 238);
+            box-shadow: 5px 5px gray;
+        }
+        .r{
+            display: inline
+        }
+        #result{
+            color: rgb(56, 216, 56);
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"> <-BACK</a>
+    <div class="field">
+        <a ><u><b>Simple Calculator:</b></u></a>
+        <a>Enter the first number:</a><input id="first" type="number">
+       <a>Enter the second number:</a><input type="number" id="second">
+       <div class="bts">
+            <button class="btn" onclick="addition()">ADD</button>
+            <button class="btn" onclick="sub()">SUB</button>
+            <button class="btn" onclick="mul()">MUL</button>
+            <button class="btn" onclick="div()">DIV</button>
+       </div>
+       <div class="r">
+            <a>Total:</a><a id="result"></a>
+        </div>
+    </div>
+</body>
+<script>
+        var a=document.getElementById("first")
+        var b=document.getElementById("second")
+        var result1=document.getElementById("result")
+        function addition(){
+            var c=Number(a.value)
+            var d=Number(b.value)
+            var total=c+d
+            result1.textContent=total
+        }
+        function sub(){
+            var c=Number(a.value)
+            var d=Number(b.value)
+            var total=c-d
+           result1.textContent=total
+        }
+        function mul(){
+            var c=Number(a.value)
+            var d=Number(b.value)
+            var total=c*d
+            result1.textContent=total 
+        }
+        function div(){
+            var c=Number(a.value)
+            var d=Number(b.value)
+            var total=c/d
+            result1.textContent=total
+        }
+</script>
+</html>
